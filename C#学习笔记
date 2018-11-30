@@ -1,4 +1,3 @@
-#散碎笔记
 1.transform.translate(new Vector3(x,y,z)*Time.deltaTime  可以使对象以每秒为单位移动
 2.transform.Translate(Vector3.forward*moveSpeed(float)*Time.deltaTime)  通过键盘控制物体移动
 3.采集键盘输入函数Input.GetKey(KeyCode.UpArrow//上DownArrow//下//LeftArrow//左RightArrow//右)
