@@ -1,0 +1,23 @@
+1.transform.translate(new Vector3(x,y,z)*Time.deltaTime  可以使对象以每秒为单位移动
+2.transform.Translate(Vector3.forward*moveSpeed(float)*Time.deltaTime)  通过键盘控制物体移动
+3.采集键盘输入函数Input.GetKey(KeyCode.UpArrow//上DownArrow//下//LeftArrow//左RightArrow//右)
+4.transform.LookAt(tranform对象)  让对象一直朝向括号内的指定对象
+5.Lerp(线性插值) 两个值之间的某个比例的值。比如，3与5之间，50%的线性插值等于4。因为4处于3和5之间的50%。
+  Mathf.Lerp()//Color.Lerp()//Vector3.Lerp(); //这是可以使用Lerp方法的类
+6.Destory(GameObject，time)  括号内可以只有GameObject也可加上time表示几秒之后破坏。
+7.Input中的GetKey和GetButton返回布尔值，表示按钮是否被按下，而GetAxis则返回浮点值，范围在1到-1之间。
+8. time.deltatime: 按照秒来计数，完成上一帧的时间（只读）。通常，使用这个函数来产生与游戏帧速率无关的效果。
+9. Invoke(string, float) 多少秒后执行某个函数，只会调用一次（一般放在Update或FixUpdate中）
+   string：要执行的函数的名称  float: 秒数，倒计时的时间 
+10.InvokeRepeating（string, float, float）多少秒后【第二个参数】后执行某个函数，并且以后每隔多少秒【第三个参数】都会执行该函数一次【重复调用N次】 
+11.CancelInvoke（）  取消这个脚本中所有的的Invoke调用
+12．foreach(类型 名称 in 同类型数组)  遍历整个数组
+13.禁用组件：GetComponent+后对象名称 . enable=false;
+14.transform.find   查找游戏物体的transform组件
+15.var——匿名类型：如果之前已经确定var类型的变量的类型，就不能再进行更改。
+16.值类型（int,bool,struct,char,float）引用类型(string数组，自定义的类，内置的类)。值类型需要一段单独的内存，一般放在栈中，而引用类型需要两段内存，一般引用放在栈中，值放在堆中。程序中通过变量名来引用内存。
+17.把内存分为堆空间和栈空间；栈空间比较小，但读取速度快，而堆空间比较大，但读取速度慢。栈的特征：先进后出，出栈（pop）入站(push)。堆里的内存可以以任意顺序存入和删除。
+18.虚方法：可以把一个基类函数声明为virtual，就可以在派生类中重写该函数： 在派生类中重写另外一个函数时，要使用override关键字显示声明： 在子类中重写虚函数后，不管在哪里调用都是调用重写之后的方法。
+19.协程可以进行多次返回，在最后一次返回时清空函数内存。
+
+     
